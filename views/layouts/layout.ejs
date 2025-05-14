@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/head') %>
-
-  <body>
+<%- include('../partials/head') %>
     <div id="wrapper">
-      <%- include('../partials/header') %>
-      <%- include('../partials/navigation') %>
 
-      <main><%- body %></main>
+        <body>
+            <%- include('../partials/header') %>
+                <%- include('../partials/navigation') %>
 
-      <%- include('../partials/footer') %>
+                    <main><%- body %></main>
+                    <div id="bottom-content" class="flex-container">
+                        <section id="notice">
+                            <h3>Delorean Upgrades</h3>
+                            <div class="notice-box"><img src="/images/Upgrades/flux-cap.png"
+                                    alt="flux-cap"><button><Upgrades-flux></Upgrades-flux></button></div>
+                            <div class="notice-box"><img src="/images/Upgrades/flame.jpg" alt="flame"></div>
+                            <div class="notice-box"><img src="/images/Upgrades/bumper_sticker.jpg" alt="bumper_sticker">
+                            </div>
+                            <div class="notice-box"><img src="/images/Upgrades/hub-cap.jpg" alt="hover"></div>
+                        </section>
+
+                        <section id="reviews">
+                            <h3>DMC Delorean Reviews</h3>
+                            <ul>
+                                <li><q>So fast it's almost like traveling in time.</q><br>(4/5)</li>
+                                <li><q>Coolest ride on the road.</q></li>
+                                <li><q>I'm feeling McFly.</q> (5/5)</li>
+                                <li><q>The most futuristic ride of our day.</q><br>(4.5/5)</li>
+                                <li><q>80's livin and I love it!</q> (5/5)</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <%- include('../partials/footer') %>
+        </body>
     </div>
-  </body>
+
 </html>
